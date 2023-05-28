@@ -1,0 +1,39 @@
+<form (ngSubmit)="onHandleSubmit()">
+    <div class="mb-3">
+        <input
+            type="text"
+            [(ngModel)]="product.id"
+            name="id"
+            class="form-control"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+            type="text"
+            [(ngModel)]="product.name"
+            name="name"
+            class="form-control"
+            placeholder="Tên sản phẩm"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+            type="number"
+            [(ngModel)]="product.price"
+            name="price"
+            class="form-control"
+            placeholder="Giá sản phẩm"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+            type="text"
+            [(ngModel)]="product.img"
+            name="img"
+            class="form-control"
+            placeholder="Ảnh sản phẩm"
+        />
+    </div>
+    {{ product | json }}
+    <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
+</form>

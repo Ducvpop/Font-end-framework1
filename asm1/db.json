@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Product A",
+      "price": 200,
+      "img": "https://picsum.photos/200/200"
+    },
+    {
+      "id": "3",
+      "name": "Product E",
+      "price": 200,
+      "img": "https://picsum.photos/200/200"
+    },
+    {
+      "id": "12",
+      "name": "ducvpop",
+      "img": "https://vapa.vn/wp-content/uploads/2022/12/anh-dep-hinh-nen-001-1.jpg",
+      "price": 12345
+    }
+  ]
+}

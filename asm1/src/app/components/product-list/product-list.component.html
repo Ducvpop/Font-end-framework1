@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-borederd">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody *ngIf="products && products.length">
+            <tr *ngFor="let product of products; index as i">
+                <td>{{ i + 1 }}</td>
+                <td><img src="{{ product.img }}" /></td>
+                <td><a class="no-underline	hover:text-red-500" routerLink="/product/{{ product.id }}">{{ product.name }} </a></td> 
+                <td>{{ product.price }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
